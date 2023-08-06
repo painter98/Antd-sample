@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Antd-sample/static/css/main.341a5f7b.css",
+    "main.js": "/Antd-sample/static/js/main.aca340d0.js",
+    "index.html": "/Antd-sample/index.html",
+    "main.341a5f7b.css.map": "/Antd-sample/static/css/main.341a5f7b.css.map",
+    "main.aca340d0.js.map": "/Antd-sample/static/js/main.aca340d0.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.341a5f7b.css",
+    "static/js/main.aca340d0.js"
+  ]
+}
