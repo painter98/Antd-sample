@@ -28,7 +28,9 @@
   font-size: medium;
 }
 
-.ant-picker{
+.ant-picker,
+.ant-select:not(.ant-select-customize-input) .ant-select-selector
+{
   background-color: rgb(66, 11, 66);
 }
 
@@ -50,7 +52,6 @@
 }
 
 .ant-select-selection-item,.ant-select-suffix,
-.ant-select-show-search:where(.css-dev-only-do-not-override-fpg3f5).ant-select:not(.ant-select-customize-input) .ant-select-selector,
 .ant-picker-footer {
   background-color: rgb(66, 11, 66);
   color:white;
@@ -68,6 +69,24 @@
 .ant-picker-dropdown .ant-picker-content th,
 .ant-picker-dropdown .ant-picker-content td,
 .ant-picker-footer .ant-picker-today-btn,
-.ant-select-item-option-content{
+.ant-select-item-option-content,
+.ant-select-selection-search,
+.ant-select-selection-placeholder{
   color: white;
+}
+
+.ant-select{
+  width:150px;
+}
+
+.ant-select-item-option-content{
+  padding-left:5px;
+}
+
+.ant-select-item-option-content:hover{
+  background-color: violet;
+}
+
+.ant-picker-cell:hover{
+ background-color:violet;
 }

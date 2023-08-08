@@ -8,12 +8,14 @@ function Datepicker({setDate,dates}) {
         console.log(date,dateString);
         setDate(dateString)
     }
+
+    console.log('dates',dates);
   return (
     <div className='datepicker'>
         <h1 className='heading'>Date-Picker</h1>
         <DatePicker
          onChange={onChange}
-         defaultValue={dayjs(dates, dateFormat)}
+         defaultValue={dates==''?null:dayjs(dates, dateFormat)}
         />
     </div>
   )

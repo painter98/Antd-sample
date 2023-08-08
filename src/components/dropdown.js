@@ -7,6 +7,10 @@ const Dropdown = ({setSelect,select}) =>{
         //console.log(label.label,key);
         setSelect(label.label)
       };
+
+    const onSearch = (value) => {
+      console.log('search:', value);
+    };
       
 return (
   <>
@@ -16,8 +20,9 @@ return (
         placeholder="Select an option"
         optionFilterProp="children"
         onChange={onChange}
+        onSearch={onSearch}
         filterOption={(input, option) =>
-        (option?.label ?? '').toLowerCase().includes(input.toLowerCase())
+          (option?.label ?? '').toLowerCase().includes(input.toLowerCase())
         }
         value={select}
 

@@ -10,6 +10,8 @@ import { setDate,setDrop } from './redux/slice/dataSlice';
 
 function App() {
   let {date,drop} = useSelector(state=>state.data);
+
+  console.log('in app',date);
   const [dates,setDates] = useState(date);
   const [select,setSelect] = useState(drop);
   let dispatch = useDispatch();
